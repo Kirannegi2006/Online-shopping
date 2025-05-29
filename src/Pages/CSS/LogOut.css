@@ -1,0 +1,39 @@
+/* src/CSS/Logout.css */
+.logout-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+  align-items: center;       
+  height: 10vh;             
+  min-height: 50vh;        
+  margin: 95px;                 
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 250px;           
+  box-sizing: border-box;
+ margin-left: 290px;  
+
+  
+}
+
+.logout-buttons {
+  margin-top: 20px;
+}
+
+.logout-buttons button {
+  margin: 10px;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-buttons button:hover {
+  background-color: #45a049;
+}
+ 
+

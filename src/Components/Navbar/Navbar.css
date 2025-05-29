@@ -1,0 +1,152 @@
+/* Navbar Wrapper */
+.navbar {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+/* Logo Section */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo img {
+  height: 40px;
+}
+
+.nav-logo p {
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.nav-menu li:hover {
+  transform: scale(1.05);
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-menu hr {
+  border: none;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  background: #dc1818;
+  margin-top: 4px;
+}
+
+/* Right Side Section */
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-login-cart button {
+  padding: 6px 14px;
+  border: 1px solid red;
+  color: white;
+  background-color: #dc1818;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-login-cart button:hover {
+  background-color: red;
+  color: white;
+}
+
+.nav-login-cart img {
+  height: 28px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.nav-login-cart img:hover {
+  transform: scale(1.1);
+  background: #f3f3f3;
+  border-radius: 5px;
+}
+
+.nav-cart-count {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -10px;
+  right: 20px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 20px;
+    gap: 10px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .nav-login-cart {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 20px;
+  }
+}
